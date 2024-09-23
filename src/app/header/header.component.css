@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url(/assets/fonts/comfortaa/Comfortaa-Regular.woff);
+    src: url(/assets/fonts/comfortaa/Comfortaa-Regular.ttf) format("truetype");
+}
+
+header {
+    width: 100%;
+    background-color: #151217;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    border-radius: 50px;
+    margin: 5px;
+    margin-left: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+    margin-right: 40px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FDD90B;
+    font-family: "Comfortaa", sans-serif;
+}
+
+a:hover {
+    color: #DA001E;
+}

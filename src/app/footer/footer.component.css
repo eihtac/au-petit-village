@@ -1,0 +1,21 @@
+footer {
+    background-color: #151217;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.instagram:hover img {
+    content: url("/assets/images/instagram-hover.png");
+}
+
+.twitter:hover img {
+    content: url("/assets/images/twitter-hover.png");
+}
