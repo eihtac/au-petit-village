@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Comfortaa";
-    src: url(/assets/fonts/comfortaa/Comfortaa-Regular.woff);
-    src: url(/assets/fonts/comfortaa/Comfortaa-Regular.ttf) format("truetype");
+    src: url(/assets/fonts/comfortaa/Comfortaa-Regular.woff) format("woff"),
+         url(/assets/fonts/comfortaa/Comfortaa-Regular.ttf) format("truetype");
 }
 
 header {
@@ -10,18 +10,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 
 img {
-    border-radius: 50px;
-    margin: 5px;
-    margin-left: 20px;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    margin-left: 1rem;
 }
 
 ul {
     display: flex;
-    gap: 25px;
-    margin-right: 40px;
+    gap: 2rem;
+    margin-right: 3rem;
     list-style-type: none;
 }
 

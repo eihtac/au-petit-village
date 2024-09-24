@@ -1,0 +1,35 @@
+<main>
+   <section class="presentation">
+        <h1>Bienvenue <strong>Au Petit Village</strong></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat porro voluptatem, dignissimos provident saepe officiis. Pariatur atque officiis vel, iure quisquam labore officia nesciunt aspernatur quas corporis fugit modi ullam.</p>
+   </section>
+
+   <section>
+        <h2>Nos figurines :</h2>
+
+        <section class="options">
+            <section class="search">
+                <label for="search">Recherche :</label>
+                <input type="text" id="search" [(ngModel)]="searchTerm" (input)="filterProducts()">
+            </section>
+    
+            <section class="tri">
+                <label for="sort">Trier par :</label>
+                <select id="sort" (change)="sortProducts($event)">
+                    <option value="" disabled selected>Choisir un tri</option>
+                    <option value="asc">Prix croissant</option>
+                    <option value="desc">Prix décroissant</option>
+                </select>
+            </section>
+        </section>
+
+        <div class="products">
+            <div *ngFor="let product of filteredProducts" class="product">
+                <h3>{{ product.name }}</h3>
+                <img [src]="product.image" alt="{{ product.name }}">
+                <p>Prix : {{ product.price | number:'1.2-2' }} €</p>
+                <button>Détails</button>
+            </div>
+        </div>
+   </section>
+</main>
