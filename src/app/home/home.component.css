@@ -17,6 +17,7 @@
 main {
     padding: 12rem 0rem 5rem 0rem;
     background-color: #f9d0a3;
+    width: 100%;
 }
 
 section {
@@ -28,7 +29,7 @@ section {
 h1 {
     font-family: "Bubbleboddy-neue", sans-serif;
     color: #151217;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
 }
 
@@ -42,7 +43,7 @@ p {
 }
 
 .presentation p {
-    margin: 0rem 15rem;
+    margin: 0rem 10rem;
 }
 
 h2 {
@@ -85,10 +86,11 @@ select {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    width: 80%;
 }
 
 .product {
-    width: calc(25% - 7rem);
+    width: calc(25% - 2rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,6 +106,7 @@ h3 {
 
 img {
     margin-bottom: 1rem;
+    max-width: 100%;
 }
 
 button {
@@ -120,4 +123,44 @@ button {
 button:hover {
     background-color: #da001e;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .presentation p {
+        margin: 0rem 5rem;
+    }
+
+    .product {
+        width: calc(50% - 2rem);
+    }
+
+    h2 {
+        margin-top: 1rem;
+    }
+
+    .options {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 100vh;
+    }
+    
+    p, label, select, button {
+        font-size: 1.5rem;
+    }
+
+    .product {
+        width: calc(100% - 2rem);
+    }
 }
