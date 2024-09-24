@@ -1,6 +1,6 @@
 footer {
     background-color: #151217;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -8,7 +8,7 @@ footer {
 }
 
 img {
-    margin: 10px;
+    margin: 0.5rem;
     transition: all 0.3s ease;
 }
 

@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url(/assets/fonts/comfortaa/Comfortaa-Regular.woff) format("woff"),
+         url(/assets/fonts/comfortaa/Comfortaa-Regular.ttf) format("truetype"),
+         url(/assets/fonts/comfortaa/Comfortaa-Bold.woff) format("woff"),
+         url(/assets/fonts/comfortaa/Comfortaa-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Bubbleboddy-neue";
+    src: url(/assets/fonts/bubbleboddy-neue/bubbleboddyneue-regulartrial.woff) format("woff"),
+         url(/assets/fonts/bubbleboddy-neue/bubbleboddyneue-regulartrial.ttf) format("truetype")
+         url(/assets/fonts/bubbleboddy-neue/BubbleboddyNeue-BoldTrial.woff) format("woff"),
+         url(/assets/fonts/bubbleboddy-neue/BubbleboddyNeue-BoldTrial.ttf) format("truetype");
+}
+
+main {
+    padding: 12rem 0rem 5rem 0rem;
+    background-color: #f9d0a3;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Bubbleboddy-neue", sans-serif;
+    color: #151217;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+strong {
+    color: #da001e;
+}
+
+p {
+    font-family: "Comfortaa", sans-serif;
+    color: #151217;
+}
+
+.presentation p {
+    margin: 0rem 15rem;
+}
+
+h2 {
+    font-family: "Bubbleboddy-neue", sans-serif;
+    font-size: 2rem;
+    color: #151217;
+    margin-top: 3rem;
+}
+
+.options {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+}
+
+.tri {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    font-family: "Comfortaa", sans-serif;
+    margin: 1rem;
+    color: #151217;
+}
+
+select { 
+    font-family: "Comfortaa", sans-serif;
+    color: #151217;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.product {
+    width: calc(25% - 7rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+h3 {
+    font-family: "Bubbleboddy-neue", sans-serif;
+    margin: 1rem;
+    color: #151217;
+}
+
+img {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: #fdd90b;
+    color: #151217;
+    border: #151217 1px solid;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+button:hover {
+    background-color: #da001e;
+    cursor: pointer;
+}
