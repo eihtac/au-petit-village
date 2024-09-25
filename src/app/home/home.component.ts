@@ -4,11 +4,12 @@ import { ProductsService } from '../services/products.service';
 import { FormsModule } from '@angular/forms';
 import { SortByPricePipe } from '../sort-by-price.pipe';
 import { FilterByNamePipe } from '../filter-by-name.pipe';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FormsModule, SortByPricePipe, FilterByNamePipe],
+  imports: [CommonModule, FormsModule, SortByPricePipe, FilterByNamePipe, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
