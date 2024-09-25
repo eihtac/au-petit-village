@@ -1,0 +1,7 @@
+<main *ngIf="product">
+    <h1>{{ product.name }}</h1>
+    <img [src]="product.image" alt="{{ product.alt }}">
+    <p>Description : {{ product.description }}</p>
+    <p>Prix : {{ product.price | number:'1.2-2' }} €</p>
+    <button>Ajouter au panier</button>
+</main>
