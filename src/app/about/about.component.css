@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url(/assets/fonts/comfortaa/Comfortaa-Regular.woff) format("woff"),
+         url(/assets/fonts/comfortaa/Comfortaa-Regular.ttf) format("truetype"),
+         url(/assets/fonts/comfortaa/Comfortaa-Bold.woff) format("woff"),
+         url(/assets/fonts/comfortaa/Comfortaa-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Bubbleboddy-neue";
+    src: url(/assets/fonts/bubbleboddy-neue/bubbleboddyneue-regulartrial.woff) format("woff"),
+         url(/assets/fonts/bubbleboddy-neue/bubbleboddyneue-regulartrial.ttf) format("truetype")
+         url(/assets/fonts/bubbleboddy-neue/BubbleboddyNeue-BoldTrial.woff) format("woff"),
+         url(/assets/fonts/bubbleboddy-neue/BubbleboddyNeue-BoldTrial.ttf) format("truetype");
+}
+
+main {
+    padding: 12rem 0rem 5rem 0rem;
+    background-color: #f9d0a3;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Bubbleboddy-neue", sans-serif;
+    color: #151217;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-family: "Comfortaa", sans-serif;
+    color: #151217;
+    margin: 0rem 10rem 2rem 10rem;
+}
+
+img {
+    border-radius: 2rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        min-width: 100vh;
+    }
+
+    p {
+        margin: 0rem 5rem 1rem 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        min-width: 100vh;
+        min-height: 100vh;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

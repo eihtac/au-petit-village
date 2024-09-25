@@ -1,7 +1,7 @@
 <main>
     <section class="presentation">
         <h1>Bienvenue <strong>Au Petit Village</strong></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat porro voluptatem, dignissimos provident saepe officiis. Pariatur atque officiis vel, iure quisquam labore officia nesciunt aspernatur quas corporis fugit modi ullam.</p>
+        <p>Création artisanale de figurines à l'effigie des personnages d'Astérix et Obélix</p>
     </section>
 
     <section>
@@ -28,7 +28,7 @@
                 <h3>{{ product.name }}</h3>
                 <img [src]="product.image" alt="{{ product.name }}">
                 <p>Prix : {{ product.price | number:'1.2-2' }} €</p>
-                <button>Détails</button>
+                <button aria-label="Détails du produit">Détails</button>
             </div>
         </div>
     </section>
