@@ -123,6 +123,7 @@ button {
 button:hover {
     background-color: #da001e;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 @media (max-width: 768px) {
